@@ -2,7 +2,7 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 5px;
   box-sizing: border-box;
 }
 
@@ -11,7 +11,9 @@ body {
 }
 
 .content {
+  display: flex;
   padding: 30px;
+  justify-content: space-evenly;
 }
 
 h2 {
@@ -25,8 +27,52 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
   border: 1px solid #a9a9a9;
   padding: 20px;
+}
+
+#sign-in-form {
+  display: flex;
+  gap: 40px;
+
+}
+
+.form-input-control {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#sign-in-form input {
+  border-radius: 5px;
+  border-color: #a9a9a9;
+  border: solid 1px;
+}
+
+#sign-up-form {
+  display: flex;
+}
+
+#sign-up-form input {
+  border-radius: 5px;
+  border-color: #a9a9a9;
+  border: solid 1px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 200px;
+}
+
+.form-group-horizontal-control select {
+  width: 250%;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .subtext {
@@ -74,6 +120,13 @@ input[type="submit"] {
   outline: none;
   clear: left;
   cursor: pointer;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 input[type="submit"]:hover {
